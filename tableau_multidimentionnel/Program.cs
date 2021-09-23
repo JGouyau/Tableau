@@ -16,12 +16,11 @@ namespace tableau_multidimentionnel
 
             //declare irregulare array
             int[][] tableauIrregulier = new int[3][];
+            for (int i = 0; i < tableauIrregulier.Length; i++)
+            {
+                tableauIrregulier[i] = new int[3-i];
+            }
 
-            tableauIrregulier[0] = new int[3];
-            tableauIrregulier[1] = new int[2];
-            tableauIrregulier[2] = new int[1];
-
-            tableauIrregulier[0] = new int[] { 1, 2, 3 };
 
             for(int j = 0; j < tableauIrregulier.Length; j++){
 
@@ -33,6 +32,8 @@ namespace tableau_multidimentionnel
                 }
             }
 
+            //affichage du tableau irregulier
+
             for (int j = 0; j < tableauIrregulier.Length; j++)
             {
                 for (int i = 0; i < tableauIrregulier[j].Length; i++)
@@ -42,8 +43,6 @@ namespace tableau_multidimentionnel
                 }
                 Console.WriteLine();
             }
-
-
 
             Console.ReadKey();
 
