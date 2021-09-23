@@ -20,7 +20,7 @@ namespace tableau_multidimentionnel
             {
                 tableauIrregulier[i] = new int[3-i];
             }
-
+            
 
             for(int j = 0; j < tableauIrregulier.Length; j++){
 
